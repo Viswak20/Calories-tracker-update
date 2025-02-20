@@ -12,7 +12,7 @@
     <div class="card w-full">
         <div class="card-body">
             <div class="flex flex-col lg:gap-6">
-                <div>
+                <form action="{% url 'addmeals' %}" method="POST">
                     <label class="form-label font-semibold">Breakfast meal</label>
                     <div class="flex items-center flex-wrap lg:flex-nowrap gap-5">
                         <label class="form-label max-w-96">Choose the breakfast and add quantity</label>
@@ -25,9 +25,9 @@
                         <input type="text" class="input" placeholder="Add the quantity" name="quantity" required>
                         <button class="btn btn-primary w-full max-w-24 sm:max-w-[125px] flex justify-center">Add Breakfast</button>
                     </div>
-                </div>
+                </form>
                 <div class="border-t border-gray-200 my-7.5"></div>
-                <div>
+                <form action="{% url 'addmeals2' %}" method="POST">
                     <label class="form-label font-semibold">Lunch Meal</label>
                     <div class="flex items-center flex-wrap lg:flex-nowrap gap-5">
                         <label class="form-label max-w-96">Choose the lunch and add quantity</label>
@@ -40,9 +40,9 @@
                         <input class="input" placeholder="add the quantity">
                         <button class="btn btn-primary w-full max-w-24 sm:max-w-[125px] flex justify-center">Add lunch</button>
                     </div>
-                </div>
+                </form>
                 <div class="border-t border-gray-200 my-7.5"></div>
-                <div>
+                <form action="{% url 'addmeals3' %}" method="POST">
                     <label class="form-label font-semibold">Dinner Meal</label>
                     <div class="flex items-center flex-wrap lg:flex-nowrap gap-5">
                         <label class="form-label max-w-96">Choose the dinner and add quantity</label>
@@ -55,12 +55,12 @@
                         <input class="input" placeholder="add the quantity">
                         <button class="btn btn-primary w-full max-w-24 sm:max-w-[125px] flex justify-center">Add dinner</button>
                     </div>
-                </div>
+                </form>
 
             </div>
         </div>
         <div class="card-footer justify-end">
-            <button class="btn btn-sm btn-info">Back to homepage</button>
+            <a href="{% url 'homepage' id=1 %}"><button class="btn btn-sm btn-info">Back to homepage </button></a>
         </div>
     </div>
 </body>

@@ -83,19 +83,22 @@ def totalcaloriescalculating(request):
 
 
 
-
+@csrf_exempt
 def dater(request):
     id=1
     return redirect('homepage',id=id)
 
+@csrf_exempt
 def dater2(request):
     id=2
     return redirect('homepage',id=id)
 
+@csrf_exempt
 def dater3(request):
     id=3
     return redirect('homepage',id=id)
-    
+
+@csrf_exempt
 def homepage(request,id):
     import datetime
     x = datetime.datetime.now()
@@ -133,6 +136,7 @@ def homepage(request,id):
         }
             return render(request,'homepage.html',context)
 
+@csrf_exempt
 def caloriestracker(request):
     breakfast=Breakfast.objects.all()
     lunch=Lunch.objects.all()
@@ -145,7 +149,7 @@ def caloriestracker(request):
     return render(request,'caloriestracker.html',context)
 
 
-
+@csrf_exempt
 def addmeals(request):
     import datetime
     x = datetime.datetime.now()
@@ -167,6 +171,7 @@ def addmeals(request):
         p.save()
         return redirect('caloriestracker')
 
+@csrf_exempt
 def addmeals2(request):
     import datetime
     x = datetime.datetime.now()
@@ -188,6 +193,7 @@ def addmeals2(request):
         q.save()
         return redirect('caloriestracker')
 
+@csrf_exempt
 def addmeals3(request):
     import datetime
     x = datetime.datetime.now()
