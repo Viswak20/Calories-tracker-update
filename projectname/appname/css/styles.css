@@ -2612,6 +2612,11 @@ img,video {
   color: var(--tw-info)
 }
 
+.btn-info {
+  color: #fff;
+  background-color: var(--tw-info)
+}
+
 .btn-dark {
   color: #fff;
   background-color: var(--tw-dark)
