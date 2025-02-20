@@ -9762,3 +9762,9 @@ html.dark .\[html\.dark_\&\]\:hidden {
       max-width: 350px;
   }
 }
+
+@media (max-width: 768px) {
+  .sm\:max-w-\[125px\] {
+      max-width: 125px;
+  }
+}
