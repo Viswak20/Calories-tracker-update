@@ -9768,3 +9768,9 @@ html.dark .\[html\.dark_\&\]\:hidden {
       max-width: 125px;
   }
 }
+
+@media (max-width: 768px) {
+  .sm\:h-auto {
+      height: auto;
+  }
+}
