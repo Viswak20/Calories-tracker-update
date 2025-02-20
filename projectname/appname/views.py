@@ -51,7 +51,7 @@ def forgetpassword(request):
             already=Regist.objects.all().get(dEmailId=forgetemail)
             already.dbasePassword=newpassword
             already.save()
-            messages.success(request,"Password reset successfully")
+            # messages.success(request,"Password reset successfully")
             return redirect('login')
         else:
             popup="Mail id does not exist"
