@@ -22,7 +22,7 @@ def signup(request):
             request.session['email']=email
             print(email)
             return redirect('totalcaloriescalculating')
-    return render(request,'signup.html') 
+    return render(request,'signup.html')
 
 @csrf_exempt
 def login(request):
