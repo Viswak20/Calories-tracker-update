@@ -1,32 +1,39 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full sm:h-auto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="{% static 'styles.css' %}">
     <link rel="icon" href="https://cdn-images-1.medium.com/v2/resize:fill:152:152/1*ycMNYnfk1wjsJbxEja4OTg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <div class="card">
+<body class="h-full flex justify-center items-center grow">
+    <div class="card w-full" style="max-width: 1500px;">
         <div class="card-header">
-            <h1 class="font-semibold">Track your Meals </h1>
-            <button class="btn btn-light btn-xs jutify-end">Track my food</button>
+            <h1 class="font-semibold text-gray-800">Track your Meals </h1>
+            <a href="/caloriestracker"><button class="btn btn-light btn-xs jutify-end">Track my food <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
         </div>
         <div class="card-body">
             <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-7.5">
                 <div class="card">
-                    <img class="w-full h-auto" src="https://drvaidyas.com/cdn/shop/articles/Protein_Foods_for_Bodybuilding_540x540.jpg?v=1653452221"> 
+                    <img class="w-full h-auto" src="{% static '/Protein_image.jpg' %}"> 
                     <div class="flex flex-col gap-2 px-5 py-4.5">
-                        <p class="text-lg font-medium text-gray-900 hover:text-primary">20gms of protein consumed</p>
+                        <p class="text-lg font-medium text-gray-800 hover:text-primary">{{ totalprotein }}gms of protein consumed</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="w-full h-auto" src="https://www.mindpumpmedia.com/hubfs/shutterstock_731206732.png"> 
+                    <img class="w-full h-auto" src="{% static '/carbs_image.jpg' %}"> 
+                    <div class="flex flex-col px-5 py-4.5">
+                        <p class="text-lg font-medium text-gray-800 hover:text-primary">{{ totalcarbohydrate }}gms of carbohydrate consumed</p>
+                    </div>
                 </div>
                 <div class="card">
-                    <img class="w-full h-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNVsl4VkHCu7dm6U3r129l81ZTt5ZLvsXtlwyR7XeX1EmP5hdUKAX_YD8&s=10"> 
+                    <img class="w-full h-auto" src="{% static '/fats_image.jpg' %}"> 
+                    <div class="flex flex-col px-5 py-4.5">
+                        <p class="text-lg font-medium text-gray-800 hover:text-primary">{{ totalfat }}gms of fat consumed</p>
+                    </div>
                 </div>
             </div>
         </div>
