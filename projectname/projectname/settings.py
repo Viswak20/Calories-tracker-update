@@ -134,6 +134,15 @@ STATICFILES_DIRS = [
     BASE_DIR / 'appname/css', 
 ]
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'appname/js', 
+]
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'appname/keenicons', 
+]
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
