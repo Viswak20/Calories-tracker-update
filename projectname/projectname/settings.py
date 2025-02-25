@@ -135,10 +135,6 @@ STATICFILES_DIRS = [
 ]
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'appname/js', 
-]
-
-STATICFILES_DIRS = [
     BASE_DIR / 'appname/keenicons', 
 ]
 
