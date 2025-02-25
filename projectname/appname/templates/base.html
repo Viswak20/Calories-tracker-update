@@ -12,8 +12,12 @@
     <link rel="icon" href="https://cdn-images-1.medium.com/v2/resize:fill:152:152/1*ycMNYnfk1wjsJbxEja4OTg.png">
 </head>
 <body class="flex h-full">
-    {% block content %}
-    
-    {% endblock content %}
+    <div class="flex grow flex-col">
+        <header> <h1>Hii</h1> </header>
+        {% block content %}
+
+        {% endblock %}
+        <footer class="footer"> <p>Footer</p> </footer>
+    </div>
 </body>
 </html>
