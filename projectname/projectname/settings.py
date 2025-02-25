@@ -131,13 +131,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'appname/css', 
+    BASE_DIR / 'appname/static/assets/css', 
 ]
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'appname/keenicons', 
+    BASE_DIR / 'appname/static/assets/vendors/keenicons', 
 ]
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'appname/static/assets/js', 
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="icon" href="https://cdn-images-1.medium.com/v2/resize:fill:152:152/1*ycMNYnfk1wjsJbxEja4OTg.png">
-    <link rel="stylesheet" href="{% static 'styles.bundle.css' %}">
+    <link rel="stylesheet" href="{% static 'keenicons/styles.bundle.css' %}">
 </head>
 <body class="h-full flex justify-center items-center grow">
     <div class="card w-full" style="max-width: 1500px;">
@@ -18,19 +18,19 @@
         <div class="card-body">
             <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-7.5">
                 <div class="card">
-                    <img class="w-full h-auto rounded-t-lg" src="{% static '/Protein_image.jpg' %}"> 
+                    <img class="w-full h-auto rounded-t-lg" src="{% static 'images/Protein_image.jpg' %}"> 
                     <div class="flex flex-col gap-2 px-5 py-4.5">
                         <p class="text-lg font-medium text-gray-800 hover:text-primary">{{ totalprotein }}gms of protein consumed</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="w-full h-auto rounded-t-lg" src="{% static '/carbs_image.jpg' %}"> 
+                    <img class="w-full h-auto rounded-t-lg" src="{% static 'images/carbs_image.jpg' %}"> 
                     <div class="flex flex-col px-5 py-4.5">
                         <p class="text-lg font-medium text-gray-800 hover:text-primary">{{ totalcarbohydrate }}gms of carbohydrate consumed</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="w-full h-auto rounded-t-lg" src="{% static '/fats_image.jpg' %}"> 
+                    <img class="w-full h-auto rounded-t-lg" src="{% static 'images/fats_image.jpg' %}"> 
                     <div class="flex flex-col px-5 py-4.5">
                         <p class="text-lg font-medium text-gray-800 hover:text-primary">{{ totalfat }}gms of fat consumed</p>
                     </div>
