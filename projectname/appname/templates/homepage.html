@@ -1,44 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en" class="h-full sm:h-auto">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/styles.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/keenicons/styles.bundle.css' %}">
-    <script src="{% static 'assets/js/core.bundle.js' %}"></script>
-    <script src="{% static 'assets/vendors/prismjs/prismjs.min.js' %}"></script>
-    <link rel="icon" href="https://cdn-images-1.medium.com/v2/resize:fill:152:152/1*ycMNYnfk1wjsJbxEja4OTg.png">
-</head>
-<body class="h-full flex justify-center items-center grow">
-    <div class="card w-full" style="max-width: 1500px;">
-        <div class="card-header">
-            <h1 class="font-semibold text-gray-800">Track your Meals </h1>
-            <a href="/caloriestracker"><button class="btn btn-light btn-xs jutify-end">Track my food <i class="ki-filled ki-arrow-up-right"></i></button></a>
-        </div>
-        <div class="card-body">
-            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-7.5">
-                <div class="card">
-                    <img class="w-full h-auto rounded-t-lg" src="{% static 'images/Protein_image.jpg' %}"> 
-                    <div class="flex flex-col gap-2 px-5 py-4.5">
-                        <p class="text-lg font-medium text-gray-800 hover:text-primary">{{ totalprotein }}gms of protein consumed</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="w-full h-auto rounded-t-lg" src="{% static 'images/carbs_image.jpg' %}"> 
-                    <div class="flex flex-col px-5 py-4.5">
-                        <p class="text-lg font-medium text-gray-800 hover:text-primary">{{ totalcarbohydrate }}gms of carbohydrate consumed</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="w-full h-auto rounded-t-lg" src="{% static 'images/fats_image.jpg' %}"> 
-                    <div class="flex flex-col px-5 py-4.5">
-                        <p class="text-lg font-medium text-gray-800 hover:text-primary">{{ totalfat }}gms of fat consumed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+    <main class="grow">
+        <h1>hii</h1>
+    </main>
+
+
+{% end block %}
