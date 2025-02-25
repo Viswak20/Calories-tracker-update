@@ -10044,6 +10044,12 @@ body {
   font-family: 'Poppins';
 }
 
+@media (max-width: 768px) {
+  .sm\:h-auto {
+    height: auto;
+  }
+}
+
 /* latin-ext */
 @font-face {
   font-family: 'Poppins';
