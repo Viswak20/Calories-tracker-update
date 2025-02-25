@@ -5441,6 +5441,10 @@ label.rating-label {
   max-width: 380px;
 }
 
+.max-w-\[420px\] {
+  max-width: 420px;
+}
+
 .max-w-\[440px\] {
   max-width: 440px;
 }
