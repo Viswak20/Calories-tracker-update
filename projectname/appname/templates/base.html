@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en" class="h-full sm:h-auto">
+<html lang="en" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +12,45 @@
     <link rel="icon" href="https://cdn-images-1.medium.com/v2/resize:fill:152:152/1*ycMNYnfk1wjsJbxEja4OTg.png">
 </head>
 <body class="flex h-full">
-    <div class="flex grow flex-col">
-        <header> 
-        
+    <div class="flex grow flex-col gap-7">
+        <header class="flex items-center py-4 lg:py-0 lg:h-[--tw-header-height]"> 
+
+        <h1 class="container-fixed">This is header</h1>
         </header>
+
         {% block content %}
 
         {% endblock %}
-        <footer class="footer">
+        <footer class="footer" style="background-color: black;height: 15%;">
+            
+            <div class="h-full flex flex-col gap-3 justify-center items-center grow">
 
+                <div class="flex gap-5">
+                    <button class="btn btn-icon rounded-full btn-sm btn-primary">
+                        <i class="ki-filled ki-facebook"></i>
+                    </button>
+                    <button class="btn btn-icon rounded-full btn-sm btn-primary">
+                        <i class="ki-filled ki-instagram"></i>
+                    </button>
+                    <button class="btn btn-icon rounded-full btn-sm btn-primary">
+                        <i class="ki-filled ki-twitter"></i>
+                    </button>
+                    <button class="btn btn-icon rounded-full btn-sm btn-primary">
+                        <i class="ki-filled ki-google"></i>
+                    </button>
+                    <button class="btn btn-icon rounded-full btn-sm btn-primary">
+                        <i class="ki-filled ki-whatsapp"></i>
+                    </button>
+                </div>
+
+                <div>
+                    <p style="color: white;">&copy; Copyright. All right reserved</p>
+                </div>
+                
+            </div>
+
+            
+            
         </footer>
     </div>
 </body>
