@@ -3,8 +3,8 @@ from .models import *
 from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
-def base(request):
-    return render(request,'base.html')
+# def base(request):
+#     return render(request,'base.html')
 
 @csrf_exempt
 def signup(request):
